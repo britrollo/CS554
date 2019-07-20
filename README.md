@@ -1,2 +1,2 @@
 # CS554
-Web Developing II
+Web Development II
