@@ -1,0 +1,6 @@
+{
+	"mongoConfig": {
+		"serverUrl": "mongodb://localhost:27017/",
+		"database":"Trollo-Brianne-CS554-Lab1"
+	}
+}
