@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  /* pointer-events: none; */
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  height: 175px;
+  padding: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cap-first-letter:first-letter {
+  text-transform: capitalize;
+}
+
+.pokemonlink, .berrieslink, .machineslink {
+  padding: 0.4rem 0.8rem;
+  background-color: white;
+  border-radius: 3px;
+  color: green;
+  text-decoration: none !important;
+}
+
+.unstyled-list {
+  vertical-align: middle;
+}
+
+.pretty-list, li {
+  margin: auto;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0px;
+}
+
+.attributes {
+  max-width: 200px;
+  margin: auto;
+  text-align: right;
+}
+
+b {
+  float: left;
+  margin: auto;
+}
+
+.pretty-list a {
+  color: green;
+}
+
+.pagination span {
+  color: green;
+}
