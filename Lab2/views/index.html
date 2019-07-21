@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="/public/css/styles.min.css">
+</head>
+
+<body>
+    <h1>New Shop</h1>
+    <div class="container">
+        <div class="row">
+            <nav class="nav flex-column col-lg-3 col-md-4 col-sm-12">
+                <a class="nav-link" href="#confetti-message">Confetti Messages</a>
+                <a class="nav-link" href="#messenger-duck">Messenger Duck</a>
+                <a class="nav-link" href="#custom-fruit">Custom Fruit</a>
+                <a class="nav-link" href="#message-pineapple">Message-Pineapple</a>
+                <a class="nav-link" href="#tree-shaper">Tree Shaper</a>
+                <a class="nav-link" href="#food-printer">Food Printer</a>
+                <a class="nav-link" href="#lucky-cat-advice">Lucky Cat Advice</a>
+                <a class="nav-link" href="#squirrel-messages">Squirrel Messages</a>
+                <a class="nav-link" href="#grow-a-speaker">Grow-A-Speaker</a>
+                <a class="nav-link" href="#personal-robot">Personal Robot</a>
+            </nav>
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="confetti-message">
+                        <img class="card-img-top" src="/public/images/1.jpg" alt="confetti-message">
+                        <div class="card-body">
+                            <h2 class="card-title">Confetti Messages</h2>
+                            <p class="card-text">Send a message with a ton of confetti!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#confetti-message-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="messenger-duck">
+                        <img class="card-img-top" src="/public/images/2.jpg" alt="messenger-duck">
+                        <div class="card-body">
+                            <h2 class="card-title">Messenger Duck</h2>
+                            <p class="card-text">This duck delivers any message to any other!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#messenger-duck-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="custom-fruit">
+                        <img class="card-img-top" src="/public/images/3.jpg" alt="custom-fruit">
+                        <div class="card-body">
+                            <h2 class="card-title">Custom Fruit</h2>
+                            <p class="card-text">Order any fruit any way you want it!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#custom-fruit-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="message-pineapple">
+                        <img class="card-img-top" src="/public/images/4.jpg" alt="message-pineapple">
+                        <div class="card-body">
+                            <h2 class="card-title">Message-Pineapple</h2>
+                            <p class="card-text">Send any message by sea with the Message-Pineapple!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#message-pineapple-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="tree-shaper">
+                        <img class="card-img-top" src="/public/images/5.jpg" alt="tree-shaper">
+                        <div class="card-body">
+                            <h2 class="card-title">Tree Shaper</h2>
+                            <p class="card-text">This tool will shape your trees in almost any shape you want!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#tree-shaper-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="food-printer">
+                        <img class="card-img-top" src="/public/images/6.jpg" alt="food-printer">
+                        <div class="card-body">
+                            <h2 class="card-title">Food Printer</h2>
+                            <p class="card-text">Print your favorite food fast and easy with the Food Printer!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#food-printer-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="lucky-cat-advice">
+                        <img class="card-img-top" src="/public/images/7.jpg" alt="lucky-cat-advice">
+                        <div class="card-body">
+                            <h2 class="card-title">Lucky Cat Advice</h2>
+                            <p class="card-text">Get the best and luckiest advice from the Lucky Cat!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#lucky-cat-advice-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="squirrel-messages">
+                        <img class="card-img-top" src="/public/images/8.jpg" alt="squirrel-messages">
+                        <div class="card-body">
+                            <h2 class="card-title">Squirrel Messages</h2>
+                            <p class="card-text">Better than a pigeon, send messages with a squirrel!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#squirrel-messages-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="grow-a-speaker">
+                        <img class="card-img-top" src="/public/images/9.jpg" alt="grow-a-speaker">
+                        <div class="card-body">
+                            <h2 class="card-title">Grow-A-Speaker</h2>
+                            <p class="card-text">Plant the seeds and grow your own speaker!</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#grow-a-speaker-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                    <div class= "card col-lg-4 col-md-6 col-sm-12" style="width: 18rem;" id="personal-robot">
+                        <img class="card-img-top" src="/public/images/10.jpg" alt="personal-robot">
+                        <div class="card-body">
+                            <h2 class="card-title">Personal Robot</h2>
+                            <p class="card-text">This adorable pocket-size robot will help you with whatever you need!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#personal-robot-modal">
+                                More Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="confetti-message-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Confetti Message</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Send your message with style! And confetti!. This kit gives you everything you need to make a
+                    special and memorable message to send to whoever you want! Upon opening the message, the confetti
+                    is launched into the air and the larger pieces explode into smaller confetti! All confetti is
+                    biodegradale.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="messenger-duck-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Messenger Duck</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Send messages quick and easy with the Messenger Duck! Messenger Ducks connect to each other
+                    and can send messages over that connection from any distance. Messenger Ducks "QUACK!" when they
+                    have received a message. Messenger Duck does not store any messages after they are heard.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="custom-fruit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Custom Fruit</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Customize your fruit any way you wish! Pick the color, size, and shape of any fruit you desire!
+                    The fruit is fresh and delicious and created using trade secrets! Custom Fruits have longer
+                    shelf lives than regular fruit.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="message-pineapple-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Message-Pineapple</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Message-Pineapple allows you to send messages from one coast to another! Insert your
+                    message into the pineapple shaped container and input the coordinates of the shore you wish
+                    to send your message to! The Message-Pineapple never gets lost and can be used an unlimited
+                    number of times!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tree-shaper-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Tree Shaper</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    The Tree Shaper is robotic pruning machine that can shape your trees and bushes into
+                    any shape you wish! Input your desired shape into the device and aim it at the tree
+                    you wish to shape. In minutes, the tree or bush will be trimmed into the shape of your
+                    choice.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="food-printer-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Food Printer</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Print your favorite food in minutes with the Food Printer! It is so simple anyone
+                    can do it! Food is hot and ready with minimal effort! Just choose the recipe you
+                    want to eat, wait a few short minutes, and enjoy!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lucky-cat-advice-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Lucky Cat Advice</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lucky Cat Advice dispenses great advice personalized to you with just a shake of its paw!
+                    The Lucky Cat is solar powered and has infinite advice for you to enjoy!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="squirrel-messages-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Squirrel Messages</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Messenger pigeons are the thing of the past! The next great secret delivery system is the
+                    squirrel! All Squirrel Messages squirrels come fully trained to deliver your messages where
+                    you want them to with minimal effort from you! Attach a message to the squirrel's leg and watch
+                    as the furry messenger runs off to make the delivery! Just be sure to have a lot of nuts for
+                    your little messenger!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="grow-a-speaker-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Grow-A-Speaker</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Plant a seed and in a few short days have a fully functional speaker! The speaker
+                    is organically made and lasts for months! The indicator on the side of the speaker let's
+                    you know when the speaker is about to die. Then you can plant a new speaker and use your
+                    old speaker as fertilzer for your new speaker!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="personal-robot-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Personal Robot</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Personal Robot is a pocket-sized helper that can help you with whatever you desire! Set
+                    reminders, ask questions, make tasklists, this robot can do it all! The robot is connected 
+                    to the Internet to give you any answer you require!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/vendor.min.js"> </script>
+    <script src="tota11y.min.js"></script>
+</body>
+
+</html>

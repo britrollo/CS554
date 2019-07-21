@@ -1,0 +1,56 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: $body-background;
+}
+
+.nav-link, h1 {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    // margin: 0 auto;
+    // float: none;
+    padding: 0px;
+    margin-bottom: 10px;
+    height: 390px;
+}
+
+.card-title {
+    font-size: $primary-font-size;
+}
+
+.card-body {
+    font-size: $secondary-font-size;
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+
+button {
+    background-color: $brand-primary;
+}
+
+a:hover {
+    color: #0c1d16;
+}
+
+a:active {
+    color: #b54a4a;
+}
+
+@media (max-width:767px) {
+    .card-img-top {
+        height: auto;
+    }
+    .card {
+        height: auto;
+    }
+}
