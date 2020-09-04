@@ -13,7 +13,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongod": "^2.0.0",
-    "mongodb": "^2.2.36",
+    "mongodb": "^3.6.1",
     "uuid": "^3.3.2"
   }
 }
