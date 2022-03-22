@@ -1,8 +1,8 @@
 # Lab 1
 ## Set up
-Install node modules: `npm i`
-Start mongo service: `brew services start mongodb/brew/mongodb-community@4.2`
-Start server: `npm start`
+* Install node modules: `npm i`
+* Start mongo service: `brew services start mongodb/brew/mongodb-community@4.2`
+* Start server: `npm start`
 
 ## Routes
 * `GET /api/tasks` - get all tasks in collection
