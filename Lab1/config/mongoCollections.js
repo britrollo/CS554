@@ -11,11 +11,17 @@ const getCollectionFn = collection => {
 	let _col = undefined;
 	
 	return async() => {
-		if (!_col) {
-			const db = await dbConnection();
-			_col = await db.collection(collection);
+		try {
+			if (!_col) {
+				const client = await dbConnection();
+				const db = client.db("test");
+				_col = await db.collection(collection);
+			}
+			return _col;
+		} catch (err) {
+			console.log(err);
 		}
-		return _col;
+		
 	};
 };
 

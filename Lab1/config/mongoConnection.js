@@ -14,9 +14,12 @@ let _connection = undefined;
 
 let connectDb = async () => {
 	if (!_connection) {
-		_connection = await MongoClient.connect(fullMongoUrl);
+		_connection = await MongoClient
+			.connect(fullMongoUrl, {useUnifiedTopology: true})
+			.catch(err => {
+				console.log(err);
+			});
 	}
-	
 	return _connection;
 };
 

@@ -69,29 +69,31 @@ let exportedMethods = {
 	
 	//Update task in Collection
 	updateTask: async (taskId, updatedTask) => {
-		if (!taskId) {
-			throw "You must provide an updated recipe.";
+		try {
+			if (!taskId) {
+				throw "You must provide an updated task.";
+			}
+			
+			const taskCollection = await tasks();
+			const taskToChange = await module.exports.getTaskById(taskId);
+			let newTaskData = {
+				id: taskId,
+				title: updatedTask.title,
+				description: updatedTask.description,
+				hoursEstimated: updatedTask.hoursEstimated,
+				completed: updatedTask.completed,
+				comments: taskToChange.comments
+			};
+			const updateTask = await taskCollection.updateOne({id: taskId}, {$set: newTaskData});
+			
+			if (updateTask.modifiedCount === 0) {
+				throw "Could not update task.";
+			}
+			
+			return await module.exports.getTaskById(taskId);
+		} catch(err) {
+			console.log(err);
 		}
-		
-		const taskCollection = await tasks();
-		const taskToChange = await module.exports.getTaskById(taskId);
-		
-		let newTaskData = {
-			id: taskId,
-			title: updatedTask.title,
-			description: updatedTask.description,
-			hoursEstimated: updatedTask.hoursEstimated,
-			completed: updatedTask.completed,
-			comments: taskToChange.comments
-		};
-		
-		const updateTask = await taskCollection.updateOne({id: taskId}, newTaskData);
-		
-		if (updateTask.modifiedCount === 0) {
-			throw "Could not update recipe.";
-		}
-		
-		return await module.exports.getTaskById(taskId);
 	},
 	
 	//Update selected features of task in Collection
@@ -134,7 +136,7 @@ let exportedMethods = {
 			comments: taskToChange.comments
 		};
 		
-		const updateTask = await taskCollection.updateOne({id: taskId}, newTaskData);
+		const updateTask = await taskCollection.updateOne({id: taskId}, {$set: newTaskData});
 		
 		if (updateTask.modifiedCount === 0) {
 			throw "Could not update recipe.";
